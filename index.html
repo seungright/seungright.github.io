@@ -7,6 +7,7 @@
 <meta name="description" content="Seungwoo Kim, Ph.D. candidate in Materials Science and Engineering at Seoul National University. Constitutive modeling and finite-element simulation of metals and ceramics.">
 <style>
 @font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:swap;src:url(assets/PretendardVariable.woff2) format('woff2-variations')}
+:root{--t-xs:13px;--t-sm:15px;--t-md:16px;--t-lg:18px;--t-xl:22px;--t-2xl:32px;--t-3xl:40px}
 body{margin:0}
 h1,h2,h3,nav,button{text-align:left}
 li,figcaption{hyphens:auto}
@@ -18,12 +19,12 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 </style>
 </head>
 <body>
-<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: 16px; line-height: 1.6; text-align: justify">
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: var(--t-md, 16px); line-height: 1.6; text-align: justify">
 
 <header style="border-bottom: 1px solid #E5E7EB">
 <div style="max-width: 1000px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: center">
 <div style="font-weight: 700; letter-spacing: -0.01em">Seungwoo Kim</div>
-<nav style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<nav style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: var(--t-sm, 15px)">
 <a href="#research" style="color: #111111; text-decoration: none">Research</a>
 <a href="#publications" style="color: #111111; text-decoration: none">Publications</a>
 <a href="#projects" style="color: #111111; text-decoration: none">Projects</a>
@@ -37,71 +38,71 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 <section style="display: flex; flex-wrap: wrap-reverse; gap: 32px 56px; align-items: center">
 <div style="flex: 999 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h1 style="margin: 0; font-size: clamp(26px, 7.2vw, 40px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; white-space: nowrap">Seungwoo Kim <span lang="ko" style="font-weight: 400; color: #5F6570">김승우</span></h1>
+<h1 style="margin: 0; font-size: clamp(26px, 7.2vw, var(--t-3xl, 40px)); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; white-space: nowrap">Seungwoo Kim <span lang="ko" style="font-weight: 400; color: #5F6570">김승우</span></h1>
 <div style="color: #5F6570; text-align: left">Ph.D. candidate · Materials Science &amp; Engineering · Seoul National University</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 4px; text-align: left">
-<div style="font-size: 13px; font-weight: 600; color: #5F6570">Research interests</div>
-<div style="font-size: 18px; line-height: 1.65">Solid mechanics · Constitutive modeling · Anisotropic plasticity · Fracture mechanics · Machine learning · Finite element method</div>
+<div style="font-size: var(--t-xs, 13px); font-weight: 600; color: #5F6570">Research interests</div>
+<div style="font-size: var(--t-lg, 18px); line-height: 1.65">Solid mechanics · Constitutive modeling · Anisotropic plasticity · Fracture mechanics · Machine learning · Finite element method</div>
 </div>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; text-wrap: pretty; text-align: justify; hyphens: auto">Specializes in finite element modeling for nonlinear solid mechanics, with a focus on anisotropic plasticity and fracture of metals and ceramics. Develops constitutive models, implements them as ABAQUS user subroutines, and combines simulation with machine learning for industrial process optimization.</p>
+<p style="margin: 0; font-size: var(--t-lg, 18px); line-height: 1.65; text-wrap: pretty; text-align: justify; hyphens: auto">Specializes in finite element modeling for nonlinear solid mechanics, with a focus on anisotropic plasticity and fracture of metals and ceramics. Develops constitutive models, implements them as ABAQUS user subroutines, and combines simulation with machine learning for industrial process optimization.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
-<a href="assets/cv.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background-color: #111111; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 6px">Download CV</a>
-<a href="https://scholar.google.com/citations?user=8kA7zCAAAAAJ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 6px">Google Scholar</a>
-<button type="button" id="email-btn" data-email="seungright@gmail.com" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 6px; background-color: #FFFFFF; cursor: pointer; font-family: inherit">Email</button>
+<a href="assets/cv.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background-color: #111111; color: #FFFFFF; font-weight: 600; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px">Download CV</a>
+<a href="https://scholar.google.com/citations?user=8kA7zCAAAAAJ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px">Google Scholar</a>
+<button type="button" id="email-btn" data-email="seungright@gmail.com" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px; background-color: #FFFFFF; cursor: pointer; font-family: inherit">Email</button>
 </div>
-<div style="font-size: 15px; color: #5F6570">seungright@gmail.com · tmznfqjtm4@snu.ac.kr</div>
+<div style="font-size: var(--t-sm, 15px); color: #5F6570">seungright@gmail.com · tmznfqjtm4@snu.ac.kr</div>
 </div>
 <img src="assets/photo.jpg" alt="Portrait of Seungwoo Kim" style="flex: 0 0 200px; width: 200px; height: 240px; border-radius: 8px; object-fit: cover">
 </section>
 
 <section id="research" style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Research</h2>
+<h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Research</h2>
 <div style="display: flex; flex-direction: column; gap: 20px">
 <div style="border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px; display: flex; flex-wrap: wrap; gap: 24px 28px">
-<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #5F6570">
+<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: var(--t-xs, 13px); color: #5F6570">
 <svg aria-hidden="true" width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="none" stroke="#5F6570" stroke-width="1.5"></circle><path d="M18 14 L31 22 L18 30 Z" fill="#5F6570"></path></svg>
 <div>[VIDEO]</div>
 </div>
 <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="font-size: 13px; font-weight: 600; color: #1D4ED8; text-align: left">Constitutive modeling · AI surrogate</div>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">AI-driven process simulation based on a thermo-mechanical anisotropic hardening model</h3>
-<p style="margin: 0; font-size: 15px; color: #5F6570; hyphens: auto">A dislocation-based distortional hardening model predicts the yield strength of API X52 linepipe steel after forming, flattening and thermal aging within a mean error of 3.4%.</p>
+<div style="font-size: var(--t-xs, 13px); font-weight: 600; color: #1D4ED8; text-align: left">Constitutive modeling · AI surrogate</div>
+<h3 style="margin: 0; font-size: var(--t-lg, 18px); font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">AI-driven process simulation based on a thermo-mechanical anisotropic hardening model</h3>
+<p style="margin: 0; font-size: var(--t-sm, 15px); color: #5F6570; hyphens: auto">A dislocation-based distortional hardening model predicts the yield strength of API X52 linepipe steel after forming, flattening and thermal aging within a mean error of 3.4%.</p>
 <img src="assets/t1_key.png" alt="Finite element simulation of plate forming, flattening and tensile specimens after thermal aging" style="width: 100%; height: auto; border-radius: 6px">
-<div><a href="research-hardening.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
+<div><a href="research-hardening.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
 </div>
 </div>
 <div style="border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px; display: flex; flex-wrap: wrap; gap: 24px 28px">
-<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #5F6570">
+<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: var(--t-xs, 13px); color: #5F6570">
 <svg aria-hidden="true" width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="none" stroke="#5F6570" stroke-width="1.5"></circle><path d="M18 14 L31 22 L18 30 Z" fill="#5F6570"></path></svg>
 <div>[VIDEO]</div>
 </div>
 <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="font-size: 13px; font-weight: 600; color: #1D4ED8; text-align: left">Plasticity · Ductile fracture</div>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">Standardized plasticity–fracture evaluation of cylindrical lithium-ion battery cans</h3>
-<p style="margin: 0; font-size: 15px; color: #5F6570; hyphens: auto">Location-dependent plasticity and ductile fracture models reproduce the measured force–displacement response and fracture location of thin-walled 21700 battery casings.</p>
+<div style="font-size: var(--t-xs, 13px); font-weight: 600; color: #1D4ED8; text-align: left">Plasticity · Ductile fracture</div>
+<h3 style="margin: 0; font-size: var(--t-lg, 18px); font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">Standardized plasticity–fracture evaluation of cylindrical lithium-ion battery cans</h3>
+<p style="margin: 0; font-size: var(--t-sm, 15px); color: #5F6570; hyphens: auto">Location-dependent plasticity and ductile fracture models reproduce the measured force–displacement response and fracture location of thin-walled 21700 battery casings.</p>
 <img src="assets/t2_thumb.png" alt="Photos of fractured battery cans next to the simulated fracture locations" style="width: 100%; height: auto; border-radius: 6px">
-<div><a href="research-battery.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
+<div><a href="research-battery.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
 </div>
 </div>
 <div style="border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px; display: flex; flex-wrap: wrap; gap: 24px 28px">
-<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #5F6570">
+<div style="flex: 3 1 420px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 6px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: var(--t-xs, 13px); color: #5F6570">
 <svg aria-hidden="true" width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="none" stroke="#5F6570" stroke-width="1.5"></circle><path d="M18 14 L31 22 L18 30 Z" fill="#5F6570"></path></svg>
 <div>[VIDEO]</div>
 </div>
 <div style="flex: 2 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<div style="font-size: 13px; font-weight: 600; color: #1D4ED8; text-align: left">Phase-field fracture · Multiscale</div>
-<h3 style="margin: 0; font-size: 20px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">Multiscale modeling of cryogenic toughening in AlN ceramics</h3>
-<p style="margin: 0; font-size: 15px; color: #5F6570; hyphens: auto">A polycrystalline phase-field fracture model shows that thermal residual stress explains only 6.6% of the toughness increase of AlN from 293 K to 77 K.</p>
+<div style="font-size: var(--t-xs, 13px); font-weight: 600; color: #1D4ED8; text-align: left">Phase-field fracture · Multiscale</div>
+<h3 style="margin: 0; font-size: var(--t-lg, 18px); font-weight: 700; line-height: 1.3; letter-spacing: -0.01em">Multiscale modeling of cryogenic toughening in AlN ceramics</h3>
+<p style="margin: 0; font-size: var(--t-sm, 15px); color: #5F6570; hyphens: auto">A polycrystalline phase-field fracture model shows that thermal residual stress explains only 6.6% of the toughness increase of AlN from 293 K to 77 K.</p>
 <img src="assets/t3_thumb.png" alt="Polycrystal microstructure maps with thermal residual stress and a simulated crack path" style="width: 100%; height: auto; border-radius: 6px">
-<div><a href="research-aln.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
+<div><a href="research-aln.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: var(--t-sm, 15px); text-decoration: none; border-radius: 6px; font-weight: 500">View project</a></div>
 </div>
 </div>
 </div>
 </section>
 
 <section id="publications" style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Publications</h2>
+<h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Publications</h2>
 <div style="display: flex; flex-direction: column; border-bottom: 1px solid #E5E7EB">
 <div style="border-top: 1px solid #E5E7EB; padding: 14px 0; display: flex; flex-wrap: wrap; gap: 4px 24px">
 <div style="flex: 0 0 168px; color: #5F6570; font-variant-numeric: tabular-nums">2026</div>
@@ -109,7 +110,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 <div style="font-weight: 600; line-height: 1.45">Non-monotonic loading and thermal aging effects on the complex flow behavior of X52 and X56 steels</div>
 <div style="color: #5F6570"><span style="font-weight: 600; color: #111111">S. Kim</span>, K.M. Min, J.H. Ahn, S.-C. Kang, M.-G. Lee, S. Choi</div>
 <div style="color: #5F6570; font-style: italic">Materials &amp; Design</div>
-<div style="display: flex; gap: 16px; font-size: 15px"><a href="https://doi.org/10.1016/j.matdes.2026.116327" target="_blank" rel="noopener" style="overflow-wrap: anywhere">https://doi.org/10.1016/j.matdes.2026.116327</a></div>
+<div style="display: flex; gap: 16px; font-size: var(--t-sm, 15px)"><a href="https://doi.org/10.1016/j.matdes.2026.116327" target="_blank" rel="noopener" style="overflow-wrap: anywhere">https://doi.org/10.1016/j.matdes.2026.116327</a></div>
 </div>
 </div>
 <div style="border-top: 1px solid #E5E7EB; padding: 14px 0; display: flex; flex-wrap: wrap; gap: 4px 24px">
@@ -118,7 +119,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 <div style="font-weight: 600; line-height: 1.45">Distortional hardening revisited: Advanced strength prediction model after multi-directional forming</div>
 <div style="color: #5F6570">S. Choi, <span style="font-weight: 600; color: #111111">S. Kim</span>, S.-C. Kang, M.-G. Lee</div>
 <div style="color: #5F6570; font-style: italic">International Journal of Mechanical Sciences</div>
-<div style="display: flex; gap: 16px; font-size: 15px"><a href="https://doi.org/10.1016/j.ijmecsci.2024.109856" target="_blank" rel="noopener" style="overflow-wrap: anywhere">https://doi.org/10.1016/j.ijmecsci.2024.109856</a></div>
+<div style="display: flex; gap: 16px; font-size: var(--t-sm, 15px)"><a href="https://doi.org/10.1016/j.ijmecsci.2024.109856" target="_blank" rel="noopener" style="overflow-wrap: anywhere">https://doi.org/10.1016/j.ijmecsci.2024.109856</a></div>
 </div>
 </div>
 <div style="border-top: 1px solid #E5E7EB; padding: 14px 0; display: flex; flex-wrap: wrap; gap: 4px 24px">
@@ -164,7 +165,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 
 <section id="projects" style="display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-direction: column; gap: 4px">
-<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Projects</h2>
+<h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Projects</h2>
 <div style="color: #5F6570">Industry and government research projects as principal researcher.</div>
 </div>
 <div style="display: flex; flex-direction: column; border-bottom: 1px solid #E5E7EB">
@@ -229,21 +230,21 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 
 <section id="background" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 40px 48px">
 <div style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Education</h2>
+<h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Education</h2>
 <div>
-<div style="font-size: 14px; color: #5F6570; font-variant-numeric: tabular-nums">Sep 2023 – present</div>
+<div style="font-size: var(--t-xs, 13px); color: #5F6570; font-variant-numeric: tabular-nums">Sep 2023 – present</div>
 <div style="font-weight: 600">Ph.D., Materials Science &amp; Engineering</div>
 <div style="color: #5F6570">Seoul National University · Advisor: Prof. Myoung-Gyu Lee</div>
 </div>
 <div>
-<div style="font-size: 14px; color: #5F6570; font-variant-numeric: tabular-nums">Aug 2023</div>
+<div style="font-size: var(--t-xs, 13px); color: #5F6570; font-variant-numeric: tabular-nums">Aug 2023</div>
 <div style="font-weight: 600">B.S., Materials Science &amp; Engineering</div>
 <div style="color: #5F6570">Seoul National University</div>
 </div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 16px">
-<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Skills</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px">
+<h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Skills</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: var(--t-sm, 15px)">
 <span style="border: 1px solid #D1D5DB; border-radius: 999px; padding: 6px 14px">ABAQUS</span>
 <span style="border: 1px solid #D1D5DB; border-radius: 999px; padding: 6px 14px">UMAT / UEL (Fortran)</span>
 <span style="border: 1px solid #D1D5DB; border-radius: 999px; padding: 6px 14px">Python</span>
@@ -254,13 +255,13 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 <span style="border: 1px solid #D1D5DB; border-radius: 999px; padding: 6px 14px">Micro-CT</span>
 <span style="border: 1px solid #D1D5DB; border-radius: 999px; padding: 6px 14px">SEM</span>
 </div>
-<h2 style="margin: 16px 0 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Awards</h2>
+<h2 style="margin: 16px 0 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Awards</h2>
 <div>
-<div style="font-size: 14px; color: #5F6570; font-variant-numeric: tabular-nums">Mar 2024</div>
+<div style="font-size: var(--t-xs, 13px); color: #5F6570; font-variant-numeric: tabular-nums">Mar 2024</div>
 <div style="font-weight: 600">Jinhap Academic Award</div>
 <div style="color: #5F6570">Korean Society for Technology of Plasticity and Materials Processing</div>
 </div>
-<h2 style="margin: 16px 0 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Patent</h2>
+<h2 style="margin: 16px 0 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Patent</h2>
 <div>
 <div style="font-weight: 600">Specimen for Measuring the Physical Properties of Cylindrical Cell Can</div>
 <div style="color: #5F6570">KR patent application No. 10-2026-0195809</div>
@@ -271,9 +272,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 </div>
 
 <footer style="border-top: 1px solid #E5E7EB">
-<div style="max-width: 1000px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; color: #5F6570; font-size: 14px">
+<div style="max-width: 1000px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; color: #5F6570; font-size: var(--t-xs, 13px)">
 <div>seungright@gmail.com · tmznfqjtm4@snu.ac.kr · Room 522, Building 30, Seoul National University</div>
-<div>Last updated 2026-11-23 23:16 KST</div>
+<div>Last updated 2026-11-23 23:18 KST</div>
 </div>
 </footer>
 
