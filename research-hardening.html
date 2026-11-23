@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Thermo-mechanical anisotropic hardening · Seungwoo Kim</title>
+<meta name="description" content="A constitutive modeling framework, coupled with an AI surrogate, that predicts thermo-mechanical strength and anisotropic hardening of steel through complex industrial forming.">
+<style>
+@font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:swap;src:url(assets/PretendardVariable.woff2) format('woff2-variations')}
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #E5E7EB">
+<div style="max-width: 1000px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: center">
+<a href="index.html" style="color: #111111; font-weight: 700; letter-spacing: -0.01em; text-decoration: none">Seungwoo Kim</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<a href="index.html" style="color: #111111; text-decoration: none">Home</a>
+<a href="index.html#research" style="color: #111111; font-weight: 700; text-decoration: none">Research</a>
+<a href="index.html#publications" style="color: #111111; text-decoration: none">Publications</a>
+<a href="assets/cv.pdf" style="color: #111111; text-decoration: none">CV</a>
+</nav>
+</div>
+</header>
+
+<div style="max-width: 1000px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 40px) 72px; display: flex; flex-direction: column; gap: 48px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 14px; color: #5F6570"><a href="index.html">Home</a> / Research / Anisotropic hardening</div>
+<div style="font-size: 13px; font-weight: 600; color: #1D4ED8">Constitutive modeling · AI surrogate</div>
+<h1 style="margin: 0; max-width: 22em; font-size: clamp(28px, 4vw, 38px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance">AI-driven process simulation based on a thermo-mechanical anisotropic hardening model</h1>
+<p style="margin: 0; max-width: 40em; font-size: 18px; line-height: 1.65; text-wrap: pretty">A constitutive modeling framework, coupled with an AI surrogate, that predicts thermo-mechanical strength and anisotropic hardening of steel through complex industrial forming.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 32px">
+<div style="flex: 3 1 480px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 8px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #5F6570">
+<svg aria-hidden="true" width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="none" stroke="#5F6570" stroke-width="1.5"></circle><path d="M18 14 L31 22 L18 30 Z" fill="#5F6570"></path></svg>
+<div>[VIDEO]</div>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+<div style="font-size: 13px; font-weight: 600; color: #5F6570">Key points</div>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px">
+<li>Temperature-dependent distortional hardening model built on dislocation-based micro-mechanisms.</li>
+<li>Fully implicit ABAQUS user material subroutine (UMAT) for strength prediction.</li>
+<li>Physics-guided AI surrogate model that predicts material properties after industrial forming.</li>
+</ul>
+</div>
+</div>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Overview</h2>
+<p style="margin: 0; text-wrap: pretty">Linepipe steel goes through cold forming, reverse loading and thermal exposure during pipe manufacturing and coating. This history produces directional hardening and temperature-dependent flow behavior, complicated by yield-point phenomena and dynamic strain aging. This work studies API X52 steel under reverse loading and thermal aging, focusing on how dislocation pile-up polarization drives the evolution of back stress.</p>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Research question</h2>
+<p style="margin: 0; text-wrap: pretty">The Bauschinger effect in linepipe steel changes with temperature and with thermal aging, and the aging response depends on the prior deformation. Aging after tension–compression prestrain recovers the reverse flow stress, while aging after tensile prestrain lowers the forward flow stress. Conventional phenomenological hardening models do not capture this coupling. The aim is a unified constitutive framework for anisotropic hardening, yield-point phenomena and dynamic strain aging under varying thermomechanical conditions.</p>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Approach</h2>
+<p style="margin: 0; text-wrap: pretty">Directional back stresses are related to the polarization of dislocation pile-ups at cell walls. A single-slip pile-up formulation is extended to a macroscopic evolution law within a distortional hardening framework. Temperature and aging enter through a temperature-dependent cell-wall resistance and a pseudo-thermal strain. The model is calibrated with elevated-temperature tensile tests and with tension–compression–aging–tension and tension–aging–tension tests on API X52, and implemented as a fully implicit user material subroutine.</p>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 24px 20px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/t1_fig1.png" alt="Schematic of dislocation pile-up polarization in a cell block and the Bauschinger effect it produces" style="width: 100%; height: auto; border: 1px solid #E5E7EB; border-radius: 8px">
+<figcaption style="font-size: 14px; color: #5F6570">Microstructure-informed distortional hardening: dislocation pile-up polarization at cell walls and the resulting Bauschinger effect.</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/t1_fig2.png" alt="Stress–strain curves at several temperatures and a forming simulation with predicted strength" style="width: 100%; height: auto; border: 1px solid #E5E7EB; border-radius: 8px">
+<figcaption style="font-size: 14px; color: #5F6570">Temperature-dependent Bauschinger effect predicted by the model (top) and strength prediction after forming, flattening and thermal aging (bottom).</figcaption>
+</figure>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Evaluation and application</h2>
+<p style="margin: 0; text-wrap: pretty">The model reproduces the flow behavior of API X52 from 298 K to 503 K, including yield-point phenomena, dynamic strain aging and the evolution of the Bauschinger effect during aging. In simulations of sequential punch forming, flattening, thermal aging and tensile loading in the hoop and longitudinal directions, the predicted 0.2% offset yield stresses agree with experiments within a mean error of 3.4%.</p>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Related publications</h2>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #E5E7EB">
+<div style="border-top: 1px solid #E5E7EB; padding: 16px 0">
+<div style="font-weight: 600">Distortional hardening revisited: Advanced strength prediction model after multi-directional forming</div>
+<div style="color: #5F6570">S. Choi, S. Kim, S.-C. Kang, M.-G. Lee · International Journal of Mechanical Sciences · 2025</div>
+</div>
+<div style="border-top: 1px solid #E5E7EB; padding: 16px 0">
+<div style="font-weight: 600">Non-monotonic loading and thermal aging effects on the complex flow behavior of X52 and X56 steels</div>
+<div style="color: #5F6570">S. Kim, K.M. Min, J.H. Ahn, S.-C. Kang, M.-G. Lee, S. Choi · Materials &amp; Design · 2026</div>
+</div>
+<div style="border-top: 1px solid #E5E7EB; padding: 16px 0">
+<div style="font-weight: 600">Dislocation pile-up polarization-based distortional hardening with unified modeling of thermally activated plasticity</div>
+<div style="color: #5F6570">S. Kim, S. Choi, H. Kim, J.H. Ahn, S.-C. Kang, K.M. Min, M.-G. Lee · International Journal of Plasticity · in revision</div>
+</div>
+</div>
+</section>
+
+<nav style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<a href="research-aln.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px">Previous: Cryogenic toughening of AlN ceramics</a>
+<a href="research-battery.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px">Next: Plasticity and fracture of battery cans</a>
+</nav>
+
+</div>
+</div>
+</body>
+</html>

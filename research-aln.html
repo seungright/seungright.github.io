@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Cryogenic toughening of AlN ceramics · Seungwoo Kim</title>
+<meta name="description" content="A polycrystalline phase-field fracture model for AlN ceramics that quantifies the mechanisms behind cryogenic toughening.">
+<style>
+@font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:swap;src:url(assets/PretendardVariable.woff2) format('woff2-variations')}
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E3A8A}
+html{scroll-behavior:smooth}
+img{max-width:100%}
+a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: 16px; line-height: 1.6">
+
+<header style="border-bottom: 1px solid #E5E7EB">
+<div style="max-width: 1000px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: center">
+<a href="index.html" style="color: #111111; font-weight: 700; letter-spacing: -0.01em; text-decoration: none">Seungwoo Kim</a>
+<nav style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<a href="index.html" style="color: #111111; text-decoration: none">Home</a>
+<a href="index.html#research" style="color: #111111; font-weight: 700; text-decoration: none">Research</a>
+<a href="index.html#publications" style="color: #111111; text-decoration: none">Publications</a>
+<a href="assets/cv.pdf" style="color: #111111; text-decoration: none">CV</a>
+</nav>
+</div>
+</header>
+
+<div style="max-width: 1000px; margin: 0 auto; padding: 48px clamp(20px, 5vw, 40px) 72px; display: flex; flex-direction: column; gap: 48px">
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 14px; color: #5F6570"><a href="index.html">Home</a> / Research / AlN ceramics</div>
+<div style="font-size: 13px; font-weight: 600; color: #1D4ED8">Phase-field fracture · Multiscale</div>
+<h1 style="margin: 0; max-width: 22em; font-size: clamp(28px, 4vw, 38px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance">Multiscale modeling of cryogenic toughening in AlN ceramics</h1>
+<p style="margin: 0; max-width: 40em; font-size: 18px; line-height: 1.65; text-wrap: pretty">A polycrystalline phase-field fracture model for AlN ceramics that quantifies the mechanisms behind cryogenic toughening.</p>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px 32px">
+<div style="flex: 3 1 480px; min-width: 0; aspect-ratio: 16 / 9; border-radius: 8px; background-color: #F3F4F6; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; font-size: 13px; color: #5F6570">
+<svg aria-hidden="true" width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="none" stroke="#5F6570" stroke-width="1.5"></circle><path d="M18 14 L31 22 L18 30 Z" fill="#5F6570"></path></svg>
+<div>[VIDEO]</div>
+</div>
+<div style="flex: 1 1 260px; min-width: 0; border: 1px solid #E5E7EB; border-radius: 8px; padding: 20px; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+<div style="font-size: 13px; font-weight: 600; color: #5F6570">Key points</div>
+<ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 10px">
+<li>Phase-field fracture model with anisotropic thermal expansion, implemented as an ABAQUS user-defined element (UEL).</li>
+<li>RVE-based prediction of fracture toughness, transgranular fracture fraction and flexural strength at cryogenic temperature.</li>
+<li>Quantified contribution of each cryogenic toughening mechanism.</li>
+</ul>
+</div>
+</div>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Overview</h2>
+<p style="margin: 0; text-wrap: pretty">Yttria-sintered polycrystalline AlN becomes tougher when cooled from 293 K to 77 K. Fracture toughness rises by about 15%, flexural strength by about 14%, and the transgranular fracture fraction nearly doubles. This has usually been attributed to thermal residual stress from the expansion mismatch between AlN grains and the YAG grain-boundary phase, but that explanation had not been tested with a microstructure-based fracture model.</p>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Research question</h2>
+<p style="margin: 0; text-wrap: pretty">Cooling changes the residual stress field and the fracture resistance of each constituent at the same time, so experiments alone cannot separate them. Can residual stress alone explain the toughness increase and the shift to transgranular fracture? If not, how much must the bulk fracture energy, the grain-boundary toughness and the YAG fracture energy change?</p>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Approach</h2>
+<p style="margin: 0; text-wrap: pretty">Molecular dynamics is combined with microstructure-based phase-field fracture modeling in Abaqus. The model resolves anisotropic AlN grains, grain boundaries and YAG pockets with temperature-dependent residual stress. Bulk fracture energy and the grain-boundary toughness ratio are calibrated inversely from measured toughness and transgranular fraction, and MD crack simulations give the temperature dependence of the YAG fracture energy. Data at 195 K were withheld for blind validation.</p>
+</section>
+
+<section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 24px 20px; align-items: start">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/t3_fig1.png" alt="Phase-field crack schematic, polycrystal microstructure maps with residual stress and a simulated crack path" style="width: 100%; height: auto; border: 1px solid #E5E7EB; border-radius: 8px">
+<figcaption style="font-size: 14px; color: #5F6570">Phase-field formulation, polycrystalline RVE with thermal residual stress, and crack path through grains and grain boundaries.</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 8px">
+<img src="assets/t3_fig2.png" alt="Plots of fracture toughness, transgranular fraction and flexural strength against temperature" style="width: 100%; height: auto; border: 1px solid #E5E7EB; border-radius: 8px">
+<figcaption style="font-size: 14px; color: #5F6570">Fracture toughness and transgranular fraction at cryogenic temperature (top) and flexural strength prediction (bottom).</figcaption>
+</figure>
+</section>
+
+<section style="max-width: 44em; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Evaluation and application</h2>
+<p style="margin: 0; text-wrap: pretty">Thermal residual stress accounts for only 6.6% of the toughness increase from 293 K to 77 K and has a negligible effect on the crack path. Matching the experiments requires a 25% increase in bulk fracture energy and a 17% increase in the grain-boundary toughness ratio. The calibrated model predicts the withheld 195 K toughness within 0.1%, and MD shows a 22% increase in YAG fracture energy at 77 K.</p>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em">Related publications</h2>
+<div style="display: flex; flex-direction: column; border-bottom: 1px solid #E5E7EB">
+<div style="border-top: 1px solid #E5E7EB; padding: 16px 0">
+<div style="font-weight: 600">Phase field fracture modeling of temperature-dependent fracture properties underlying cryogenic toughening in AlN ceramics</div>
+<div style="color: #5F6570">S. Kim, M.-G. Lee · in preparation</div>
+</div>
+</div>
+</section>
+
+<nav style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between">
+<a href="research-battery.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px">Previous: Plasticity and fracture of battery cans</a>
+<a href="research-hardening.html" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-size: 15px; text-decoration: none; border-radius: 6px">Next: Thermo-mechanical anisotropic hardening</a>
+</nav>
+
+</div>
+</div>
+</body>
+</html>
