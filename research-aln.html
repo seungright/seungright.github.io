@@ -8,10 +8,8 @@
 <style>
 @font-face{font-family:'Pretendard Variable';font-weight:45 920;font-style:normal;font-display:swap;src:url(assets/PretendardVariable.woff2) format('woff2-variations')}
 :root{--t-xs:13px;--t-sm:15px;--t-md:16px;--t-lg:18px;--t-xl:22px;--t-2xl:32px;--t-3xl:40px}
-@media (max-width: 600px){:root{--t-xs:12px;--t-sm:14px;--t-md:15px;--t-lg:16px;--t-xl:19px;--t-2xl:26px}div,p,li,figcaption{text-align:left !important;hyphens:manual !important}}
+@media (max-width: 600px){:root{--t-xs:12px;--t-sm:14px;--t-md:15px;--t-lg:16px;--t-xl:19px;--t-2xl:26px}}
 body{margin:0}
-h1,h2,h3,nav,button{text-align:left}
-li,figcaption{hyphens:auto}
 a{color:#1D4ED8}a:hover{color:#1E3A8A}
 html{scroll-behavior:smooth}
 img{max-width:100%}
@@ -20,7 +18,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 </style>
 </head>
 <body>
-<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: var(--t-md, 16px); line-height: 1.6; text-align: justify">
+<div style="box-sizing: border-box; background-color: #FFFFFF; color: #111111; font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif; font-size: var(--t-md, 16px); line-height: 1.6">
 
 <header style="border-bottom: 1px solid #E5E7EB">
 <div style="max-width: 1000px; margin: 0 auto; padding: 20px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; align-items: center">
@@ -41,7 +39,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 <div style="font-size: var(--t-xs, 13px); color: #5F6570"><a href="index.html">Home</a> / Research / AlN ceramics</div>
 <div style="font-size: var(--t-xs, 13px); font-weight: 600; color: #1D4ED8">Phase-field fracture · Multiscale</div>
 <h1 style="margin: 0; font-size: clamp(24px, 4vw, var(--t-2xl, 32px)); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em">Multiscale modeling of cryogenic toughening in AlN ceramics</h1>
-<p style="margin: 0; font-size: var(--t-lg, 18px); line-height: 1.65; text-wrap: pretty; text-align: justify; hyphens: auto">A polycrystalline phase-field fracture model for AlN ceramics that quantifies the mechanisms behind cryogenic toughening.</p>
+<p style="margin: 0; font-size: var(--t-lg, 18px); line-height: 1.65; text-wrap: pretty">A polycrystalline phase-field fracture model for AlN ceramics that quantifies the mechanisms behind cryogenic toughening.</p>
 </div>
 
 <div style="display: flex; flex-wrap: wrap; gap: 24px 32px">
@@ -61,17 +59,17 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 
 <section style="display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Overview</h2>
-<p style="margin: 0; text-wrap: pretty; text-align: justify; hyphens: auto">Yttria-sintered polycrystalline AlN becomes tougher when cooled from 293 K to 77 K. Fracture toughness rises by about 15%, flexural strength by about 14%, and the transgranular fracture fraction nearly doubles. This has usually been attributed to thermal residual stress from the expansion mismatch between AlN grains and the YAG grain-boundary phase, but that explanation had not been tested with a microstructure-based fracture model.</p>
+<p style="margin: 0; text-wrap: pretty">Yttria-sintered polycrystalline AlN becomes tougher when cooled from 293 K to 77 K. Fracture toughness rises by about 15%, flexural strength by about 14%, and the transgranular fracture fraction nearly doubles. This has usually been attributed to thermal residual stress from the expansion mismatch between AlN grains and the YAG grain-boundary phase, but that explanation had not been tested with a microstructure-based fracture model.</p>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Research question</h2>
-<p style="margin: 0; text-wrap: pretty; text-align: justify; hyphens: auto">Cooling changes the residual stress field and the fracture resistance of each constituent at the same time, so experiments alone cannot separate them. Can residual stress alone explain the toughness increase and the shift to transgranular fracture? If not, how much must the bulk fracture energy, the grain-boundary toughness and the YAG fracture energy change?</p>
+<p style="margin: 0; text-wrap: pretty">Cooling changes the residual stress field and the fracture resistance of each constituent at the same time, so experiments alone cannot separate them. Can residual stress alone explain the toughness increase and the shift to transgranular fracture? If not, how much must the bulk fracture energy, the grain-boundary toughness and the YAG fracture energy change?</p>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Approach</h2>
-<p style="margin: 0; text-wrap: pretty; text-align: justify; hyphens: auto">Molecular dynamics is combined with microstructure-based phase-field fracture modeling in Abaqus. The model resolves anisotropic AlN grains, grain boundaries and YAG pockets with temperature-dependent residual stress. Bulk fracture energy and the grain-boundary toughness ratio are calibrated inversely from measured toughness and transgranular fraction, and MD crack simulations give the temperature dependence of the YAG fracture energy. Data at 195 K were withheld for blind validation.</p>
+<p style="margin: 0; text-wrap: pretty">Molecular dynamics is combined with microstructure-based phase-field fracture modeling in Abaqus. The model resolves anisotropic AlN grains, grain boundaries and YAG pockets with temperature-dependent residual stress. Bulk fracture energy and the grain-boundary toughness ratio are calibrated inversely from measured toughness and transgranular fraction, and MD crack simulations give the temperature dependence of the YAG fracture energy. Data at 195 K were withheld for blind validation.</p>
 </section>
 
 <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 24px 20px; align-items: start">
@@ -87,7 +85,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2p
 
 <section style="display: flex; flex-direction: column; gap: 12px">
 <h2 style="margin: 0; font-size: var(--t-xl, 22px); font-weight: 700; letter-spacing: -0.01em">Evaluation and application</h2>
-<p style="margin: 0; text-wrap: pretty; text-align: justify; hyphens: auto">Thermal residual stress accounts for only 6.6% of the toughness increase from 293 K to 77 K and has a negligible effect on the crack path. Matching the experiments requires a 25% increase in bulk fracture energy and a 17% increase in the grain-boundary toughness ratio. The calibrated model predicts the withheld 195 K toughness within 0.1%, and MD shows a 22% increase in YAG fracture energy at 77 K.</p>
+<p style="margin: 0; text-wrap: pretty">Thermal residual stress accounts for only 6.6% of the toughness increase from 293 K to 77 K and has a negligible effect on the crack path. Matching the experiments requires a 25% increase in bulk fracture energy and a 17% increase in the grain-boundary toughness ratio. The calibrated model predicts the withheld 195 K toughness within 0.1%, and MD shows a 22% increase in YAG fracture energy at 77 K.</p>
 </section>
 
 <section style="display: flex; flex-direction: column; gap: 12px">
