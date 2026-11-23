@@ -11,7 +11,7 @@ body{margin:0}
 a{color:#1D4ED8}a:hover{color:#1E3A8A}
 html{scroll-behavior:smooth}
 img{max-width:100%}
-a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
+a:focus-visible,button:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -43,7 +43,7 @@ a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
 <div style="display: flex; flex-wrap: wrap; gap: 10px">
 <a href="assets/cv.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; background-color: #111111; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 6px">Download CV</a>
 <a href="https://scholar.google.com/citations?user=8kA7zCAAAAAJ" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 6px">Google Scholar</a>
-<a href="mailto:seungright@gmail.com" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 6px">Email</a>
+<button type="button" id="email-btn" data-email="seungright@gmail.com" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid #D1D5DB; color: #111111; font-weight: 500; font-size: 15px; text-decoration: none; border-radius: 6px; background-color: #FFFFFF; cursor: pointer; font-family: inherit">Email</button>
 </div>
 <div style="font-size: 15px; color: #5F6570">seungright@gmail.com · tmznfqjtm4@snu.ac.kr</div>
 </div>
@@ -270,10 +270,21 @@ a:focus-visible{outline:2px solid #1D4ED8;outline-offset:2px}
 <footer style="border-top: 1px solid #E5E7EB">
 <div style="max-width: 1000px; margin: 0 auto; padding: 28px clamp(20px, 5vw, 40px); display: flex; flex-wrap: wrap; gap: 8px 32px; justify-content: space-between; color: #5F6570; font-size: 14px">
 <div>seungright@gmail.com · tmznfqjtm4@snu.ac.kr · Room 522, Building 30, Seoul National University</div>
-<div>Last updated 2026-11-23 22:35 KST</div>
+<div>Last updated 2026-11-23 22:47 KST</div>
 </div>
 </footer>
 
 </div>
+<script>
+(function () {
+  var b = document.getElementById('email-btn'); if (!b) return;
+  var addr = b.getAttribute('data-email'), timer;
+  function show(t) { b.textContent = t; clearTimeout(timer); timer = setTimeout(function () { b.textContent = 'Email'; }, 2500); }
+  b.addEventListener('click', function () {
+    try { navigator.clipboard.writeText(addr).then(function () { show('Copied: ' + addr); }, function () { show(addr); }); }
+    catch (e) { show(addr); }
+  });
+})();
+</script>
 </body>
 </html>
